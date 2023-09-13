@@ -1,0 +1,39 @@
+#titulo{
+    color: crimson;
+    text-align: center;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.texto_grande{
+    font-size: 20px;
+}
+
+*{
+    background-color: ghostwhite;
+    color: cornflowerblue;
+}
+
+/* Agrupar selectores (actividad 06) */
+h1, h2, p, div{
+    color: crimson;
+    text-align: center;
+}
+
+/* Bordes y colores en CSS (actividad 07) */
+h1{
+    text-align: center;
+}
+
+.solido{
+    border: solid red;
+    border-width: 5px;
+    border-radius: 20px;
+}
+
+.redondeado{
+    border: 5px solid blueviolet;
+    border-radius: 20px 0px 10px 0px;
+}

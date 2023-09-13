@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos-proyecto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>Búsqueda</h4>
+            <i class="material-icons">search</i>
+        </nav>
+        <div class="titulo-principal">
+            <h1>¡Bienvenidos a mi página web!</h1>
+            <hr>
+            <h2>Gabriel Anderson Ccama Apaza</h2>
+        </div>
+        <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,60.70 C143.06,134.72 324.77,-13.30 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </header>
+
+    <main>
+        <section class="contenedor presentacion">
+            <h2 class="titulo">Presentación</h2>
+            <div class="contenedor-presentacion">
+                <img class="img-circular" src="img/foto.png" width="400"/>
+                <p>
+                    ¡Hola! Mi nombre es Gabriel Anderson Ccama Apaza, tengo 18 años. Me apaciona mucho
+                    de la tecnología y por esta razón elegí la carrera de Diseño y Desarrollo de Software.
+                    Me fascina el fútbol, por lo que es uno de mis mayores hobbies. También me gusta escuchar
+                    música en mis ratos libres. Soy un amante de los animales, sobre todo de los perros y los gatos.
+                </p>
+            </div>
+        </section>
+        <section class="gustos-preferencias">
+            <div class="contenedor">
+                <h2 class="titulo">Gustos y preferencias</h2>
+                <div class="galeria">
+                    <div class="imagen">
+                        <img src="img/sunset.jpg" alt="img1"/>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/sunset3.jpg" alt="img2"/>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/fubtol.jpg" alt="img3"/>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/messi.jpg" alt="img4"/>
+                    </div>
+                </div>
+                <div class="galeria">
+                    <div class="imagen">
+                        <img src="img/sunset2.jpg" alt="img5"/>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/espacio.jpg" alt="img6"/>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/calle.jpg" alt="img7"/>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/ambiente.jpg" alt="img8"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-mi">
+            <h2 class="titulo">Sobre mí</h2>
+            <div class="conjunto">
+                <div class="bloques">
+                    <div class="contenido-bloque habilidades">
+                        <h3 class="sub">Habilidades</h3>
+                        <p>
+                            - Conocimiento intermedio en Python <br>
+                            - Conocimiento intermedio en Java <br>
+                            - Conocimiento básico en HTML <br>
+                            - Conocimiento básico en CSS <br>
+                            - Conocimiento Intermedio en SQL 
+                        </p>
+                    </div>
+                    <div class="contenido-bloque formacion">
+                        <h3 class="sub">Formación profesional</h3>
+                        <p>
+                            - Estudiante de Ingeniería de Sistemas - UNA PUNO <br>
+                            - Estudiante de Diseño y Desarrollo de Software - Tecsup 
+                        </p>
+                    </div>
+                </div>
+                <div class="bloque-idiomas">
+                    <div class="idiomas">
+                        <h3 class="sub">Idiomas</h3>
+                        <p>
+                            - Español <br>
+                            - Ingles Intermedio I <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="contenedor">
+                <h2 class="titulo">Video</h2>
+                <div class="vdo">
+                    <video controls>
+                        <source src="vdo/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="msc">
+                    <h2>Músicas</h2>
+                    <div class="musica">
+                        <audio controls>
+                            <source src="msc/musicafav.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio controls>
+                            <source src="msc/musicafav2.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio controls>
+                            <source src="msc/musicafav3.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio controls>
+                            <source src="msc/musicafav4.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Datos">
+            <div class="contenedor">
+                <div class="bloque-datos">
+                    <div class="cuestinoario">
+                        <h2 class="titulo-datos">Déjame tus datos</h2>
+                        <form>
+                            <label for="nombre">Nombre:</label><br/>
+                            <div class="form">
+                                <input type="text" id="nombre" name="nombre"
+                                placeholder="Escribe tu nombre"/><br/>
+                            </div>
+                            <label for="apellido">Apellido:</label><br/>
+                            <div class="form">
+                                <input type="text" id="apellido" name="apellido"
+                                placeholder="Escribe tu apellido"/><br/>
+                            </div>
+                            <label for="descripcion">Habilidades:</label><br/>
+                            <div class="form">
+                                <input type="text" id="habilidades" name="habilidades"
+                                placeholder="Escribe tus habilidades..."/><br/>
+                            </div>
+                            <input type="submit" value="Enviar" class="enviar"/>
+                        </form>
+                    </div>
+                    <img src="img/pregunta.png" alt="" width="500px">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class=" footer-cont">
+            <div class="footer1">
+                <h4 class="titulo-pie">Email</h4>
+                <hr class="linea">
+                <p>gabriel.ccama@tecsup.edu.pe</p>
+            </div>
+            <div class="footer2">
+                <h4 class="titulo-pie">Contacto</h4>
+                <hr class="linea"> 
+                <div class="webs">
+                    <a href="https://www.facebook.com/gabrielanderson.ccamaapaza?mibextid=ZbWKwL" target="_blank"><img src="img/fb.png" width="37px"></a>
+                    <a href="https://instagram.com/gabriel_ccama?igshid=NGExMmI2YTkyZg==" target="_blank"><img src="img/insta.png" width="45px"></a>
+                    <a href="https://twitter.com/gabriel_cc25446" target="_blank"><img src="img/twt.png" width="40px"></a>
+                    <a href="https://www.linkedin.com/in/gabriel-ccama-b15b21252" target="_blank"><img src="img/lkl.png" width="50px"></a>  
+                </div>
+            </div>
+            <div class="footer3">
+                <h4>Información del curso</h4>
+                <hr class="linea">
+                <p>Semestre III - D</p>
+                <p>Desarrollo de Aplicaciones en Internet</p>
+                <p>Tecsup</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
